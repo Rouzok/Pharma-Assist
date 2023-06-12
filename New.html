@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="mx-auto shadow fixed top-0 z-50 xl:w-full w-full">
+        <div class="
+      container
+      mx-auto
+      flex
+      bg-slate-100
+      items-center
+      justify-around
+      py-5
+      xl:py-0
+      xl:justify-between
+      xl:px-16
+    ">
+            <a href="" class="
+        focus:outline-none
+        focus-visible:ring-2
+        ring-neutral-900
+        rounded-sm
+        z-50
+        hover:opacity-75
+        transition-opacity
+        animate__animated animate__flipInX
+      " aria-label="Go to homepage">
+                <img src="assets/img/logo_hori.png" class="w-40 xl:w-52" alt="Morent Logo">
+            </a>
+            <div class="flex justify-end ">
+                <a href="#" role="menuitem" class="
+                py-1
+                mx-6
+                focus:outline-none
+                hidden" href="" id="cartLg2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#94a3b8" class="w-6 h-6 hover:fill-Blue transition-colors duration-300">
+                        <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                    </svg>
+                </a>
+
+                <button id="menu" class="
+                xl:hidden
+                focus:outline-none
+                focus-visible:ring-2
+                ring-neutral-900
+                rounded-sm
+                text-neutral-900
+                hover:text-neutral-600
+                transition-colors
+                " aria-expanded="false" aria-label="Open Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div role="menubar" class="
+        hidden
+        flex-col
+        absolute
+        z-40
+        right-0
+        left-0
+        top-16
+        bg-slate-100
+        text-center
+        text-lg
+        p-6
+        items-center
+        xl:flex
+        xl:flex-row
+        xl:justify-end
+        xl:static
+        xl:shadow-none
+        xl:w-1/2
+        ">
+                <a role="menuitem" class="
+            py-1
+            px-4
+            text-neutral-900
+            hover:text-Blue
+            duration-300
+            " href="LandingPage.html">Home</a>
+
+                <!-- Hover Dropdown -->
+                <div class="xl:w-max w-full flex xl-flex-row flex-col justify-center" id="wrapHover1">
+                    <a role="menuitem" class="group px-4 py-1 text-neutral-900 hover:text-Blue transition duration-300 ease-in-out flex items-center justify-center xl:w-max w-full" href="#" type="button" id="hoverNav1">
+                        About Us
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1.5 group-hover:rotate-90 transition-transform duration-300">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+
+                    </a>
+                    <ul class="hidden shadow-none border-slate-200 xl:absolute top-[3.8rem] dropdown-menu xl:w-max w-full bg-slate-50 text-base z-50 py-2 list-none xl:text-left text-center rounded-lg xl:shadow-lg bg-clip-padding transition duration-300 border-[1px] flex flex-col self-center" id="ulNav1">
+                        <li class="flex self-center xl:self-start w-max xl:px-4 px-0">
+                            <h6 class="text-gray-900 font-semibold text-md bg-transparent">
+                                <span>About Us</span>
+                            </h6>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-sm py-2 px-4 font-normal w-full whitespace-nowrap bg-transparent text-neutral-900 hover:text-Blue hover:bg-gray-100 transition duration-300 ease-in-out flex items-center justify-center xl:justify-start" href="#">
+                                <span>Pharma-Assist at a Glance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-sm py-2 px-4 font-normal w-full whitespace-nowrap bg-transparent text-neutral-900 hover:text-Blue hover:bg-gray-100 transition duration-300 ease-in-out flex items-center justify-center xl:justify-start" href="About.html">
+                                <span>History</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-sm py-2 px-4 font-normal w-full whitespace-nowrap bg-transparent text-neutral-900 hover:text-Blue hover:bg-gray-100 transition duration-300 ease-in-out flex items-center justify-center xl:justify-start" href="About.html#vision">
+                                <span>Vision & Mision</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- End Hover Dropdown -->
+
+                <a role="menuitem" class="
+            py-1
+            px-4
+            text-neutral-900 
+            hover:text-Blue
+            duration-300
+            " href="">Product</a>
+
+                <!-- Hover Dropdown -->
+                <div class="xl:w-max w-full flex xl-flex-row flex-col justify-center" id="wrapHover2">
+                    <a role="menuitem" class="group px-4 py-1 text-neutral-900 hover:text-Blue transition duration-300 ease-in-out flex items-center justify-center xl:w-max w-full" href="#" type="button" id="hoverNav2">
+                        Latest News
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1.5 group-hover:rotate-90 transition-transform duration-300">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+
+                    </a>
+                    <ul class="hidden shadow-none border-slate-2 xl:absolute top-[3.8rem] dropdown-menu xl:w-max w-full bg-slate-50 text-base z-50 py-2 list-none xl:text-left text-center rounded-lg xl:shadow-lg bg-clip-padding transition duration-300 border-[1px] border-slate-200 flex flex-col self-center" id="ulNav2">
+                        <li class="flex self-center xl:self-start w-max xl:px-4 px-0 xl:pr-20 pr-0">
+                            <h6 class="text-gray-900 font-semibold text-md bg-transparent">
+                                Latest News
+                            </h6>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-sm py-2 px-4 font-normal w-full whitespace-nowrap bg-transparent text-gray-700 hover:text-Blue hover:bg-gray-100 transition duration-300 ease-in-out flex items-center justify-center xl:justify-start" href="New.html">
+                                <span>News</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-sm py-2 px-4 font-normal w-full whitespace-nowrap bg-transparent text-gray-700 hover:text-Blue hover:bg-gray-100 transition duration-300 ease-in-out flex items-center justify-center xl:justify-start" href="New.html#PressNews">
+                                <span>Press Release</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <!-- End Hover Dropdown -->
+
+                <a href="#" role="menuitem" class="
+                py-1
+                mx-6" href="" id="cartLg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#94a3b8" class="w-6 h-6 hover:fill-Blue transition-colors duration-300">
+                        <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="my-[6rem]">
+        <!-- raply -->
+        <div class="my-24 px-6 mb-80 mx-auto">
+
+            <!-- Section: Design Block -->
+            <section class="text-gray-800 text-center">
+
+                <h2 class="text-3xl font-bold mb-12 pb-4 text-center">Latest articles</h2>
+
+                <div class="flex gap-6 justify-center">
+                    <div class="w-96 h-64 mb-6 lg:mb-0">
+                        <div class="relative bg-white rounded-lg shadow-lg">
+                            <div class="flex justify-center">
+                                <div class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4">
+                                    <img src="assets/img/herbal.jpg" class="w-full h-60 object-cover" />
+                                    <a href="#">
+                                        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h5 class="font-bold text-lg mb-3">Herbal</h5>
+                                <p class="text-gray-500 mb-4">
+                                    <small>Published <u>13.01.2022</u> by
+                                        <a href="" class="text-gray-900">Anna Maria Doe</a></small>
+                                </p>
+                                <p class="mb-4 pb-2">
+                                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                                    placerat vulputate. Ut vulputate est non quam dignissim
+                                    elementum. Donec a ullamcorper diam.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-96 h-64 mb-6 lg:mb-0">
+                        <div class="relative block bg-white rounded-lg shadow-lg">
+                            <div class="flex">
+                                <div class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                                    <img src="assets/img/pharmasis.jpg" class="w-full h-60 object-cover" />
+                                    <a href="#!">
+                                        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h5 class="font-bold text-lg mb-3">Donate</h5>
+                                <p class="text-gray-500 mb-4">
+                                    <small>Published <u>12.01.2022</u> by
+                                        <a href="" class="text-gray-900">Halley Frank</a></small>
+                                </p>
+                                <p class="mb-4 pb-2">
+                                    Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet
+                                    diam orci, nec ornare metus semper sed. Integer volutpat
+                                    ornare erat sit amet rutrum.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-96 h-64 mb-6 lg:mb-0">
+                        <div class="relative block bg-white rounded-lg shadow-lg">
+                            <div class="flex">
+                                <div class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                                    <img src="assets/img/ffirus.jpg" class="w-full h-60 object-cover" />
+                                    <a href="#!">
+                                        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h5 class="font-bold text-lg mb-3">Virus</h5>
+                                <p class="text-gray-500 mb-4">
+                                    <small>Published <u>10.01.2022</u> by
+                                        <a href="" class="text-gray-900">Joe Svan</a></small>
+                                </p>
+                                <p class="mb-4 pb-2">
+                                    Curabitur tristique, mi a mollis sagittis, metus felis mattis
+                                    arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
+                                    massa volutpat feugiat. Donec.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </div>
+
+
+        </section>
+        <!-- Section: Design Block -->
+
+    </div>
+    <!-- raply -->
+    <!-- Ganda -->
+    <div class="mx-24" id="PressNews">
+        <h2 class="text-3xl font-bold mb-12 pb-4 text-center">Press Release</h2>
+
+        <div class="grid md:grid-cols-2 gap-x-6 xl:gap-x-12 items-center mb-12">
+            <div class="mb-6 md:mb-0" id="btnOpenDialog1">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img src="https://cdns.abclocal.go.com/content/kabc/images/cms/automation/vod/1378756_1280x720.jpg" class="w-full" alt="Louvre" />
+                    <a href="#!">
+                        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold mb-3">Pharma-Assist Pharmaceuticals Inc. Responds to Robbery, Prioritizing Patient Safety</h3>
+                <p class="text-gray-500 mb-6">
+                    <small>Published <u>24.03.2020</u> by
+                        <a href="" class="text-gray-900">Wesker Albert</a></small>
+                </p>
+                <p class="text-gray-500">Pharma-Assist Pharmaceuticals Inc. Takes Swift and Decisive Action in Response to Robbery Incident: Safeguarding Patient Well-being and Ensuring Uncompromised Product Traceability
+                </p>
+            </div>
+
+            <dialog id="dialog1" class="bg-gray-800 rounded">
+                <button class="text-white absolute top-6 px-1.5 py-0.5 rounded-md right-6 self-end border-[1px] hover:bg-gray-700 border-gray-300" id="btnCloseDialog1">X</button>
+                <div class="flex px-10 py-16 gap-10">
+
+                    <img src="https://cdns.abclocal.go.com/content/kabc/images/cms/automation/vod/1378756_1280x720.jpg" class="w-[36rem] h-full" alt="Louvre" />
+                    <div class="text-white">
+                        <h3 class="text-4xl font-bold mb-1.5">Pharma-Assist Pharmaceuticals Inc. Responds to Robbery, Prioritizing Patient Safety</h3>
+                        <p class="text-gray-200 mb-6 text-xl">
+                            <small>Published <u>24.03.2020</u> by
+                                <span class="text-gray-400">Wesker Albert</span></small>
+                        </p>
+                        <p class="text-gray-200">
+                            Pharma-Assist Pharmaceuticals Inc. swiftly responds to a recent robbery incident, prioritizing patient safety and product traceability. With a strong commitment to their values, the company has taken decisive action to protect their valued customers. Implementing rigorous security measures and enhanced personnel training, Pharma-Assist Pharmaceuticals Inc. fortifies its facilities to prevent future threats. Furthermore, they collaborate closely with authorities and industry experts to reassess their supply chain, ensuring the integrity of their life-saving medications. By demonstrating unwavering dedication to patient well-being and maintaining the highest standards, Pharma-Assist Pharmaceuticals Inc. sets a reliable and trustworthy example in the pharmaceutical industry. Their swift response and comprehensive security measures safeguard patients and reinforce their commitment to excellence.
+                        </p>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-6 xl:gap-x-12 items-center mb-12">
+            <div class="mb-6 md:mb-0 md:order-2" id="btnOpenDialog2">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img src="https://www.csb.gov/assets/1/17/img_10702.jpg?15292" class="w-full" alt="Louvre" />
+                    <a href="#!">
+                        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-6 md:mb-0 md:order-1">
+                <h3 class="text-2xl font-bold mb-3">Pharma-Assist Pharmaceuticals Inc. Addresses Facility Fire, Ensuring Safety and Continuity</h3>
+                <p class="text-gray-500 mb-6">
+                    <small>Published <u>12.06.2019</u> by
+                        <a href="" class="text-gray-900">Valentine Jill</a></small>
+                </p>
+                <p class="text-gray-500">
+                    Swift Response and Collaboration with Authorities Ensure Safety and Continuity of Operations at Pharma-Assist Pharmaceuticals Inc. Following Facility Fire Incident, Demonstrating Commitment to Employee Well-being and Community Resilience
+                </p>
+            </div>
+
+            <dialog id="dialog2" class="bg-gray-800 rounded">
+                <button class="text-white absolute top-6 px-1.5 py-0.5 rounded-md right-6 self-end border-[1px] hover:bg-gray-700 border-gray-300" id="btnCloseDialog2">X</button>
+                <div class="flex px-10 py-16 gap-10">
+
+                    <img src="https://www.csb.gov/assets/1/17/img_10702.jpg?15292" class="w-[36rem] h-full" alt="Louvre" />
+                    <div class="text-white">
+                        <h3 class="text-4xl font-bold mb-1.5">Pharma-Assist Pharmaceuticals Inc. Addresses Facility Fire, Ensuring Safety and Continuity</h3>
+                        <p class="text-gray-200 mb-6 text-xl">
+                            <small>Published <u>12.06.2019</u> by
+                                <span class="text-gray-400">Valentine Jill</span></small>
+                        </p>
+                        <p class="text-gray-200">
+                            Pharma-Assist Pharmaceuticals Inc. promptly addresses a facility fire incident, prioritizing employee well-being and community resilience. With swift action and collaboration, the company ensures safety, continuity of operations, and support for affected employees. By mobilizing resources and working closely with authorities, Pharma-Assist Pharmaceuticals Inc. minimizes disruption and restores critical operations efficiently. Additionally, they extend their assistance beyond their own organization, aiding local community recovery efforts. Through their commitment to employee well-being and community resilience, Pharma-Assist Pharmaceuticals Inc. demonstrates their dedication as a responsible corporate citizen and trusted healthcare provider.
+                        </p>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-6 xl:gap-x-12 items-center mb-12">
+            <div class="mb-6 md:mb-0" id="btnOpenDialog3">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img src="https://1471793142.rsc.cdn77.org/data/thumbs/full/31278/650/0/0/0/sewer.jpg" class="w-full" alt="Louvre" />
+                    <a href="#!">
+                        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold mb-3">Pharma-Assist Pharmaceuticals Inc. Addresses Factory Sewage Leak, Ensuring Environmental Safety</h3>
+                <p class="text-gray-500 mb-6">
+                    <small>Published <u>10.01.2019</u> by
+                        <a href="" class="text-gray-900">De Santa Michael</a></small>
+                </p>
+                <p class="text-gray-500">
+                    Pharma-Assist Pharmaceuticals Inc. Takes Proactive Measures to Mitigate Environmental Impact and Safeguard Community Well-being in Response to Factory Sewage Leak Incident
+                </p>
+            </div>
+
+            <dialog id="dialog3" class="bg-gray-800 rounded">
+                <button class="text-white absolute top-6 px-1.5 py-0.5 rounded-md right-6 self-end border-[1px] hover:bg-gray-700 border-gray-300" id="btnCloseDialog3">X</button>
+                <div class="flex px-10 py-16 gap-10">
+
+                    <img src="https://1471793142.rsc.cdn77.org/data/thumbs/full/31278/650/0/0/0/sewer.jpg" class="w-[36rem] h-full" alt="Louvre" />
+                    <div class="text-white">
+                        <h3 class="text-4xl font-bold mb-1.5">Pharma-Assist Pharmaceuticals Inc. Addresses Factory Sewage Leak, Ensuring Environmental Safety</h3>
+                        <p class="text-gray-200 mb-6 text-xl">
+                            <small>Published <u>10.01.2019</u> by
+                                <span class="text-gray-400">De Santa Michael</span></small>
+                        </p>
+                        <p class="text-gray-200">
+                            Pharma-Assist Pharmaceuticals Inc. swiftly responds to a factory sewage leak incident, placing utmost importance on mitigating environmental impact and ensuring community well-being. Through prompt action and collaboration with experts, they contain and rectify the leak, while implementing measures to prevent future incidents. Transparent communication with the local community fosters trust and addresses concerns regarding potential health risks. Pharma-Assist Pharmaceuticals Inc.'s proactive approach demonstrates their commitment to environmental responsibility and sets a high standard for the industry. Their dedication to sustainable practices and community safety reaffirms their position as a responsible pharmaceutical company.
+                        </p>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-6 xl:gap-x-12 items-center mb-12">
+            <div class="mb-6 md:mb-0 md:order-2" id="btnOpenDialog4">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img src="https://envigaurd.com/topics/wp-content/uploads/2021/08/Pharma-sector.jpg" class="w-full" alt="Louvre" />
+                    <a href="#!">
+                        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-6 md:mb-0 md:order-1">
+                <h3 class="text-2xl font-bold mb-3">Pharma-Assist Pharmaceuticals Inc. Addresses Concerns of Harmful Ingredients, Ensures Customer Safety and Trust</h3>
+                <p class="text-gray-500 mb-6">
+                    <small>Published <u>12.01.2022</u> by
+                        <a href="" class="text-gray-900">Crane Kyle</a></small>
+                </p>
+                <p class="text-gray-500">
+                    Urgent Investigation and Transparent Communication: Pharma-Assist Pharmaceuticals Inc. Takes Immediate Action to Address Concerns of Harmful Ingredients, Prioritizing Customer Safety and Trust
+                </p>
+            </div>
+
+            <dialog id="dialog4" class="bg-gray-800 rounded">
+                <button class="text-white absolute top-6 px-1.5 py-0.5 rounded-md right-6 self-end border-[1px] hover:bg-gray-700 border-gray-300" id="btnCloseDialog4">X</button>
+                <div class="flex px-10 py-16 gap-10">
+
+                    <img src="https://envigaurd.com/topics/wp-content/uploads/2021/08/Pharma-sector.jpg" class="w-[36rem] h-full" alt="Louvre" />
+                    <div class="text-white">
+                        <h3 class="text-4xl font-bold mb-1.5">Pharma-Assist Pharmaceuticals Inc. Addresses Concerns of Harmful Ingredients, Ensures Customer Safety and Trust</h3>
+                        <p class="text-gray-200 mb-6 text-xl">
+                            <small>Published <u>12.01.2022</u> by
+                                <span class="text-gray-400">Crane Kyle</span></small>
+                        </p>
+                        <p class="text-gray-200">Pharma-Assist Pharmaceuticals Inc. responds swiftly to concerns about harmful ingredients in their products. They launch an urgent investigation, collaborating with experts and regulatory authorities to ensure thorough assessment. Transparent communication is maintained, addressing customer concerns and providing timely updates. The company strengthens quality control measures and implements rigorous ingredient testing to prevent future incidents. Pharma-Assist Pharmaceuticals Inc. prioritizes customer safety and trust, upholding the highest standards of quality. Their proactive approach and commitment to continuous improvement reinforce their reputation as a reliable pharmaceutical company dedicated to customer well-being.</p>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+
+    </div>
+    <!-- Ganda -->
+    </div>
+    <footer class="bg-gray-800">
+        <div class="mx-0 xl:mx-64 h-max xl:h-[35vh] pt-7 xl:mt-0 mt-52">
+            <div class="flex justify-between xl:flex-row flex-col text-white mx-3 mb-3 xl:gap-0 gap-2">
+                <a href="" class="
+            focus:outline-none
+            focus-visible:ring-2
+            ring-neutral-900
+            rounded-sm
+            z-50
+            hover:opacity-75
+            transition-opacity
+            xl:static flex justify-center
+          " aria-label="Go to homepage">
+                    <img src="assets/img/logo_hori.png" class="w-44 xl:w-52" alt="Morent Logo">
+                </a>
+                <div class="flex justify-center items-center xl:text-base text-sm">
+                    <label>Copyright &copy Pharma-Assist 2022 - All Right Reversed</label>
+                </div>
+            </div>
+            <div class="w-full bg-white h-[1.2px] rounded"></div>
+            <div class="mt-2 flex xl:flex-row flex-col xl:justify-start justify-center xl:gap-4 gap-2 text-white">
+                <div class="flex justify-center xl:gap-4 gap-6">
+                    <a href="LandingPage.html" class="hover:text-Blue transition-colors duration-300">Home</a>
+                    <a href="#" class="hover:text-Blue transition-colors duration-300">Pharma-Assist</a>
+                </div>
+                <div class="flex justify-center xl:gap-4 gap-6">
+                    <a href="#" class="hover:text-Blue transition-colors duration-300">e-Procurement</a>
+                    <a href="#" class="hover:text-Blue transition-colors duration-300">Contact Us</a>
+                </div>
+            </div>
+            <div class="flex xl:justify-between justify-around text-white xl:mt-0 mt-7">
+                <div class="flex items-center">
+                    <label>Phas 360 (0,00 %)</label>
+                </div>
+                <div class="flex justify-end items-center gap-2">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-2 mb-2 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-gray-700 hover:bg-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </button>
+
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-2 mb-2 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-gray-700 hover:bg-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-5 h-5"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                        </svg>
+                    </button>
+
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-2 mb-2 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-gray-700 hover:bg-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
