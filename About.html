@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body>
+<body style="scroll-behavior: smooth;">
     <nav class="mx-auto shadow fixed top-0 z-50 xl:w-full w-full">
         <div class="
       mx-auto
@@ -23,7 +24,7 @@
       xl:justify-between
       xl:px-16
     ">
-            <a href="" class="
+            <a href="./index.html" class="
         focus:outline-none
         focus-visible:ring-2
         ring-neutral-900
@@ -90,27 +91,22 @@
             text-neutral-900
             hover:text-Blue
             duration-300
-            " href="index.html">Home</a>
+            " href="./index.html">Home</a>
 
                 <!-- Hover Dropdown -->
                 <div class="xl:w-max w-full flex xl:flex-row flex-col justify-center" id="wrapHover1">
-                    <a role="menuitem" class="group px-4 py-1 text-neutral-900 hover:text-Blue transition duration-300 ease-in-out flex items-center justify-center xl:w-max w-full" href="#" type="button" id="hoverNav1">
+                    <a role="menuitem" class="group px-4 py-1 text-Blue/80 hover:text-Blue transition duration-300 ease-in-out flex items-center justify-center xl:w-max w-full" href="#" type="button" id="hoverNav1">
                         About Us
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1.5 group-hover:rotate-90 transition-transform duration-300">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
 
                     </a>
-                    <ul class="hidden shadow-none border-slate-200 xl:absolute top-[3.8rem] dropdown-menu xl:w-max w-full bg-slate-50 text-base z-50 py-2 list-none xl:text-left text-center rounded-lg xl:shadow-lg bg-clip-padding transition duration-300 border-[1px] flex flex-col self-center" id="ulNav1">
+                    <ul class="hidden shadow-none border-slate-200 xl:absolute top-[3.8rem] dropdown-menu xl:w-48 w-full bg-slate-50 text-base z-50 py-2 list-none xl:text-left text-center rounded-lg xl:shadow-lg bg-clip-padding transition duration-300 border-[1px] flex flex-col self-center" id="ulNav1">
                         <li class="flex self-center xl:self-start w-max xl:px-4 px-0">
                             <h6 class="text-gray-900 font-semibold text-md bg-transparent">
                                 <span>About Us</span>
                             </h6>
-                        </li>
-                        <li>
-                            <a class="dropdown-item text-sm py-2 px-4 font-normal w-full whitespace-nowrap bg-transparent text-neutral-900 hover:text-Blue hover:bg-gray-100 transition duration-300 ease-in-out flex items-center justify-center xl:justify-start" href="#">
-                                <span>Pharma-Assist at a Glance</span>
-                            </a>
                         </li>
                         <li>
                             <a class="dropdown-item text-sm py-2 px-4 font-normal w-full whitespace-nowrap bg-transparent text-neutral-900 hover:text-Blue hover:bg-gray-100 transition duration-300 ease-in-out flex items-center justify-center xl:justify-start" href="./About.html">
@@ -133,7 +129,7 @@
             text-neutral-900 
             hover:text-Blue
             duration-300
-            " href="">Product</a>
+            " href="./index.html#products">Product</a>
 
                 <!-- Hover Dropdown -->
                 <div class="xl:w-max w-full flex xl-flex-row flex-col justify-center" id="wrapHover2">
@@ -178,10 +174,10 @@
 
 
     <section class="pt-20">
-        <div class="px-24 flex items-center justify-around mt-16">
-            <div class="flex flex-col gap-4 w-1/2 ">
-                <h1 class="font-medium text-3xl">Pharma-Assist History</h1>
-                <p class="text-lg text-gray-700">Pharma-Assist is known as a manufacturer of a wide range of life-saving drugs and innovative therapies. Led by the mysterious CEO, Dr. Albert Wesker, they pursued groundbreaking research to revolutionize medicine. However, their secret experiments took a dangerous turn when they created a virus with unforeseen consequences. As a few members rebelled against Dr. Wesker's plan, the fate of humanity hung in the balance.</p>
+        <div class="xl:px-24 px-8 flex xl:flex-row flex-col-reverse items-center justify-around mt-16 gap-6 xl:gap-0">
+            <div class="flex flex-col gap-4 xl:w-1/2 w-full">
+                <h1 class="font-medium text-2xl xl:text-3xl text-Blue">Pharma-Assist History</h1>
+                <p class="text-md xl:text-lg text-gray-700">Pharma-Assist is known as a manufacturer of a wide range of life-saving drugs and innovative therapies. Led by the mysterious CEO, Dr. Albert Wesker, they pursued groundbreaking research to revolutionize medicine. However, their secret experiments took a dangerous turn when they created a virus with unforeseen consequences. As a few members rebelled against Dr. Wesker's plan, the fate of humanity hung in the balance.</p>
                 <button class="flex items-center text-Blue hover:text-DarkBlue duration-300 w-max">
                     <span class="self-start font-semibold">View More </span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
@@ -191,49 +187,49 @@
             </div>
             <img src="https://www.cdmg.com/hubfs/CDMG%20Main%20Pages/Pharmaceutical/pharmaceutical%20factory.jpg" alt="Pharma-Assist" class="w-[28rem] h-full object-cover shadow rounded">
         </div>
-        <div class="h-80 my-16">
-            <div class="swiper">
+        <div class="h-80 my-16 px-8 xl:px-0">
+            <div class="swiper" id="SwiperShow">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="https://cache.careers360.mobi/media/article_images/2022/10/12/5_Career_Options_in_Pharmaceutical_Industry_1.jpg" alt="History" class="w-[24rem] object-cover aspect-video">
                         <h1 class="font-bold text-lg">January 1981</h1>
-                        <p class=" text-gray-700 w-3/5">In the 1981, the field of pharmacy saw advancements in medication production, distribution, and patient care.</p>
+                        <p class=" text-gray-700 w-4/5">In the 1981, the field of pharmacy saw advancements in medication production, distribution, and patient care.</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Kerr_%26_Reynolds_Pharmacy_System_%281977%29.jpg" alt="History" class="w-[24rem] object-cover aspect-video">
                         <h1 class="font-bold text-lg">January 1984</h1>
-                        <p class=" text-gray-700 w-3/5">Computer technology started to be implemented in pharmacies, leading to the automation of prescription processing and inventory management.</p>
+                        <p class=" text-gray-700 w-4/5">Computer technology started to be implemented in pharmacies, leading to the automation of prescription processing and inventory management.</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="https://www.sartorettoverna.com/ns/wp-content/uploads/2020/05/4-min-1.jpg" alt="History" class="w-[24rem] object-cover aspect-video">
                         <h1 class="font-bold text-lg">January 1988</h1>
-                        <p class=" text-gray-700 w-3/5">Clinical pharmacy services began to expand, with pharmacists playing a more active role in patient care, conducting medication reviews, and providing counseling.</p>
+                        <p class=" text-gray-700 w-4/5">Clinical pharmacy services began to expand, with pharmacists playing a more active role in patient care, conducting medication reviews, and providing counseling.</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="data:image/jpeg;base64,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" alt="History" class="w-[24rem] object-cover aspect-video">
                         <h1 class="font-bold text-lg">January 1992</h1>
-                        <p class=" text-gray-700 w-3/5">The 1990s brought further technological advancements, with the introduction of electronic prescribing systems and barcode scanning to improve medication safety and reduce errors.</p>
+                        <p class=" text-gray-700 w-4/5">The 1990s brought further technological advancements, with the introduction of electronic prescribing systems and barcode scanning to improve medication safety and reduce errors.</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="https://assets-global.website-files.com/5e9726a182e4d42d25469d39/5f206890022b3695acd72469_Pharmacist-and-Physician-Collab_blog-1024x771.jpg" alt="History" class="w-[24rem] object-cover aspect-video">
                         <h1 class="font-bold text-lg">January 1995</h1>
-                        <p class=" text-gray-700 w-3/5">Pharmacists started to be recognized as integral members of the healthcare team, participating in collaborative practices with physicians and other healthcare professionals.</p>
+                        <p class=" text-gray-700 w-4/5">Pharmacists started to be recognized as integral members of the healthcare team, participating in collaborative practices with physicians and other healthcare professionals.</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="https://s3-ap-south-1.amazonaws.com/ricedigitals3bucket/AUPortalContent/2021/07/12114718/blog-banner.jpg" alt="History" class="w-[24rem] object-cover aspect-video">
                         <h1 class="font-bold text-lg">January 1999</h1>
-                        <p class=" text-gray-700 w-3/5">The pharmaceutical industry experienced significant growth, with the development and introduction of new drugs for various diseases and conditions.
+                        <p class=" text-gray-700 w-4/5">The pharmaceutical industry experienced significant growth, with the development and introduction of new drugs for various diseases and conditions.
                         </p>
                     </div>
                 </div>
 
-                <button class="absolute top-1/2 -translate-y-1/2 z-[1] left-0 bg-slate-200 hover:bg-Blue text-black hover:text-white font-bold rounded-full xl:w-10 xl:h-10 w-5 h-5 shadow-md flex items-center justify-center xl:ml-14 ml-4 transition duration-300" id="btn-prev">
-                    <svg xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="xl:w-5 xl:h-5 w-3 h-3">
+                <button class="absolute top-1/2 -translate-y-1/2 z-[1] left-0 bg-slate-200 hover:bg-Blue text-black hover:text-white font-bold rounded-full xl:w-10 xl:h-10 w-8 h-8 shadow-md flex items-center justify-center xl:ml-14 ml-2 transition duration-300" id="btn-prev">
+                    <svg xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="xl:w-5 xl:h-5 w-7 h-7">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                     </svg>
                 </button>
-                <button class="absolute top-1/2 -translate-y-1/2 z-[1] right-0 bg-slate-200 hover:bg-Blue text-black hover:text-white font-bold rounded-full xl:w-10 xl:h-10 w-5 h-5 shadow-md flex items-center justify-center xl:mr-14 mr-4 transition duration-300" id="btn-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="xl:w-5 xl:h-5 w-3 h-3">
+                <button class="absolute top-1/2 -translate-y-1/2 z-[1] right-0 bg-slate-200 hover:bg-Blue text-black hover:text-white font-bold rounded-full xl:w-10 xl:h-10 w-8 h-8 shadow-md flex items-center justify-center xl:mr-14 mr-2 transition duration-300" id="btn-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="xl:w-5 xl:h-5 w-7 h-7">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
                 </button>
@@ -242,7 +238,7 @@
         </div>
 
         <section id="vision">
-            <div class="mx-4 h-max mb-10" data-aos="fade-up" data-aos-duration="1000">
+            <div class="px-8 h-max mb-10" data-aos="fade-up" data-aos-duration="500">
 
                 <div class="flex justify-around uppercase text-Blue xl:text-4xl text-base mt-10">
                     <div class="flex justify-center items-center h-2">
@@ -254,18 +250,17 @@
                     </div>
                 </div>
 
-                <div class="mt-14 flex xl:flex-row flex-col xl:gap-0 gap-6 box-border justify-center">
-                    <!-- max-w-base kalo card dikit -->
+                <div class="mt-14 flex xl:flex-row flex-col xl:gap-6 gap-8 box-border justify-center">
 
-                    <div class="flex justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                        <div class="bg-white max-w-xs flex flex-col justify-start">
-                            <div class="w-1/4 h-1/4 flex self-center">
-                                <img class="w-full h-full" src="assets/img/sus1.png" alt="sus1" />
+                    <div class="flex justify-center shadow-lg rounded-lg bg-white" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                        <div class="max-w-xs flex flex-col justify-start">
+                            <div class="w-1/4 h-1/4 flex self-center mt-4 mb-2">
+                                <img class="w-full h-20 object-cover" src="assets/img/sus1.png" alt="sus1" />
                             </div>
                             <div class="text-center flex justify-between flex-col">
                                 <h5 class="text-gray-900 text-3xl font-medium mb-2">Environmental Preservation</h5>
-                                <p class="text-gray-700 text-base my-2 mx-5">
-                                    Organizing education according to national standards to produce graduates who are superior and globally oriented in the development of pharmaceutical and health sciences.
+                                <p class="text-gray-700 text-base my-2 mx-5 text-justify">
+                                    To reduce a company's environmental impact, it must optimize energy use, minimize waste, embrace renewables, implement sustainable transportation, manage the supply chain responsibly, and educate employees. These steps lead to a more sustainable future.
                                 </p>
                             </div>
                             <div class="flex justify-center">
@@ -280,7 +275,7 @@
 
         <!-- Body 2 (All Product) -->
         <section>
-            <div class="mx-4 h-max mb-20" data-aos="fade-up" data-aos-duration="1000">
+            <div class="mx-4 h-max mb-20" data-aos="fade-up" data-aos-duration="500">
 
                 <div class="flex justify-around uppercase text-Blue xl:text-4xl text-base mt-10">
                     <div class="flex justify-center items-center h-2">
@@ -292,18 +287,17 @@
                     </div>
                 </div>
 
-                <div class="mt-14 flex xl:flex-row flex-col xl:gap-0 gap-6 box-border justify-center">
-                    <!-- max-w-base kalo card dikit -->
+                <div class="mt-14 flex xl:flex-row flex-col xl:gap-6 gap-8 box-border justify-center">
 
-                    <div class="flex justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                        <div class="bg-white max-w-xs flex flex-col justify-start">
-                            <div class="w-1/4 h-1/4 flex self-center">
-                                <img class="w-full h-full" src="assets/img/sus2.png" alt="sus1" />
+                    <div class="flex justify-center shadow-lg rounded-lg bg-white" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                        <div class="max-w-xs flex flex-col justify-start">
+                            <div class="w-1/4 h-1/4 flex self-center mt-4">
+                                <img class="w-full h-20 object-cover" src="assets/img/sus2.png" alt="sus1" />
                             </div>
                             <div class="text-center flex justify-between flex-col">
-                                <h5 class="text-gray-900 text-3xl font-medium mb-2">Environmental Preservation</h5>
-                                <p class="text-gray-700 text-base my-2 mx-5">
-                                    Organizing quality and superior education in clinical and community fields with international standards, and producing graduates who believe in and fear God Almighty, have noble morals and character, are independent, professional, and have an entrepreneurial spirit.
+                                <h5 class="text-gray-900 text-3xl font-medium mb-2">Inclusive Business</h5>
+                                <p class="text-gray-700 text-base my-2 mx-5 text-justify">
+                                    This approach involves actively engaging with low-income individuals, women, persons with disabilities, and other disadvantaged groups, providing them with access to markets, finance, skills training, and opportunities for entrepreneurship.
                                 </p>
                             </div>
                             <div class="flex justify-center">
@@ -313,15 +307,15 @@
                     </div>
 
 
-                    <div class="flex justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                        <div class="bg-white max-w-xs flex flex-col justify-start">
-                            <div class="w-1/4 h-1/4 flex self-center">
-                                <img class="w-full h-full" src="assets/img/sus4.png" alt="sus1" />
+                    <div class="flex justify-center shadow-lg rounded-lg bg-white" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                        <div class=" max-w-xs flex flex-col justify-start">
+                            <div class="w-1/4 h-1/4 flex self-center mt-4">
+                                <img class="w-full h-20 object-cover" src="assets/img/sus4.png" alt="sus1" />
                             </div>
                             <div class="text-center flex justify-between flex-col">
-                                <h5 class="text-gray-900 text-3xl font-medium mb-2">Environmental Preservation</h5>
-                                <p class="text-gray-700 text-base my-2 mx-5">
-                                    Carrying out superior, fair and sustainable governance of the Department
+                                <h5 class="text-gray-900 text-3xl font-medium mb-2">Product Integrity</h5>
+                                <p class="text-gray-700 text-base my-2 mx-5 text-justify">
+                                    Product integrity ensures quality, safety, and reliability throughout a product's lifecycle. It involves adhering to standards, conducting testing, providing transparent information, and addressing customer concerns
                                 </p>
                             </div>
                             <div class="flex justify-center">
@@ -330,15 +324,15 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                        <div class="bg-white max-w-xs flex flex-col justify-start">
-                            <div class="w-1/4 h-1/4 flex self-center">
-                                <img class="w-full h-full" src="assets/img/sus3.png" alt="sus1" />
+                    <div class="flex justify-center shadow-lg rounded-lg bg-white" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+                        <div class="max-w-xs flex flex-col justify-start">
+                            <div class="w-1/4 h-1/4 flex self-center mt-4">
+                                <img class="w-full h-20 object-cover" src="assets/img/sus3.png" alt="sus1" />
                             </div>
                             <div class="text-center flex justify-between flex-col">
-                                <h5 class="text-gray-900 text-3xl font-medium mb-2">Environmental Preservation</h5>
-                                <p class="text-gray-700 text-base my-2 mx-5">
-                                    Organizing pharmaceutical institutions as agents for the development and dissemination of knowledge and technology in the field of drug and cosmetic development as well as clinical and community services to improve the quality of life of the community based on noble local wisdom values.
+                                <h5 class="text-gray-900 text-3xl font-medium mb-2">Employee Welfare</h5>
+                                <p class="text-gray-700 text-base my-2 mx-5 text-justify">
+                                    Employee welfare ensures well-being and quality of life. It includes competitive compensation, work-life balance, development opportunities, and a positive workplace culture. Prioritizing employee welfare benefits both individuals and the organization.
                                 </p>
                             </div>
                             <div class="flex justify-center">
@@ -348,7 +342,6 @@
                     </div>
                 </div>
         </section>
-        <!-- End Detail Product -->
 
         <!-- End card 3 -->
 
@@ -361,7 +354,7 @@
     <footer class="bg-gray-800">
         <div class="mx-0 xl:mx-64 h-max xl:h-[35vh] pt-7 xl:mt-0 mt-52">
             <div class="flex justify-between xl:flex-row flex-col text-white mx-3 mb-3 xl:gap-0 gap-2">
-                <a href="" class="
+                <a href="./index.html" class="
             focus:outline-none
             focus-visible:ring-2
             ring-neutral-900
@@ -380,7 +373,7 @@
             <div class="w-full bg-white h-[1.2px] rounded"></div>
             <div class="mt-2 flex xl:flex-row flex-col xl:justify-start justify-center xl:gap-4 gap-2 text-white">
                 <div class="flex justify-center xl:gap-4 gap-6">
-                    <a href="index.html" class="hover:text-Blue transition-colors duration-300">Home</a>
+                    <a href="#" class="hover:text-Blue transition-colors duration-300">Home</a>
                     <a href="#" class="hover:text-Blue transition-colors duration-300">Pharma-Assist</a>
                 </div>
                 <div class="flex justify-center xl:gap-4 gap-6">
@@ -419,13 +412,21 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="assets/js/main.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             loop: true,
-            slidesPerView: 3,
+            slidesPerView: 1,
+            breakpoints:{
+                1280: {
+                    slidesPerView: 3,
+                }
+            },
             allowTouchMove: true,
-            spaceBetween: -250,
             autoplay: true,
             navigation: {
                 nextEl: '#btn-next',

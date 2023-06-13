@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="assets/img/logo_ver.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Ujian Blok2 | Kelompok 4</title>
   </head>
 
@@ -15,7 +14,7 @@
     <!-- Navbar fixed top-0 z-50 w-full-->
     <nav class="mx-auto shadow fixed top-0 z-50 xl:w-full w-full">
       <div class="container mx-auto flex bg-slate-100 items-center justify-around py-5 xl:py-0 xl:justify-between xl:px-16">
-        <a href="" class="focus:outline-none focus-visible:ring-2 ring-neutral-900 rounded-sm z-50 hover:opacity-75 transition-opacity animate__animated animate__flipInX" aria-label="Go to homepage">
+        <a href="./index.html" class="focus:outline-none focus-visible:ring-2 ring-neutral-900 rounded-sm z-50 hover:opacity-75 transition-opacity animate__animated animate__flipInX" aria-label="Go to homepage">
           <img src="assets/img/logo_hori.png" class="w-40 xl:w-52" alt="Morent Logo" />
         </a>
         <div class="flex justify-end">
@@ -35,7 +34,7 @@
         </div>
 
         <div role="menubar" class="hidden flex-col absolute z-40 right-0 left-0 top-16 bg-slate-100 text-center text-lg p-6 items-center xl:flex xl:flex-row xl:justify-end xl:static xl:shadow-none xl:w-1/2">
-          <a role="menuitem" class="py-1 px-4 text-neutral-900 hover:text-Blue duration-300" href="">Home</a>
+          <a role="menuitem" class="py-1 px-4 text-Blue/80 hover:text-Blue duration-300" href="">Home</a>
 
           <!-- Hover Dropdown -->
           <div class="xl:w-max w-full flex xl-flex-row flex-col justify-center" id="wrapHover1">
@@ -49,18 +48,10 @@
               class="hidden shadow-none border-slate-200 xl:absolute top-[3.8rem] dropdown-menu xl:w-max w-full bg-slate-50 text-base z-50 py-2 list-none xl:text-left text-center rounded-lg xl:shadow-lg bg-clip-padding transition duration-300 border-[1px] flex flex-col self-center"
               id="ulNav1"
             >
-              <li class="flex self-center xl:self-start w-max xl:px-4 px-0">
+              <li class="flex self-center xl:self-start xl:w-48 w-max xl:px-4 px-0">
                 <h6 class="text-gray-900 font-semibold text-md bg-transparent">
                   <span>About Us</span>
                 </h6>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-sm py-2 px-4 font-normal w-full whitespace-nowrap bg-transparent text-neutral-900 hover:text-Blue hover:bg-gray-100 transition duration-300 ease-in-out flex items-center justify-center xl:justify-start"
-                  href="#"
-                >
-                  <span>Pharma-Assist at a Glance</span>
-                </a>
               </li>
               <li>
                 <a
@@ -319,7 +310,7 @@
     <!-- End Body 1 -->
 
     <!-- Body 2 (All Product) -->
-    <section>
+    <section id="products">
       <div
         class="mx-4 mt-15 h-max pt-10 pb-36 flex justify-center relative"
         x-data="{
@@ -560,11 +551,11 @@
       </footer>
     </section>
 
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </body>
 </html>
